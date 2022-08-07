@@ -2,11 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>ThingsToDo</title>
+    <title>Pin</title>
     <link rel="icon" href="/images/favicon.ico?">
 
     <!-- CSS Style Sheets -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pin-styles.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,13 +24,8 @@
   </head>
   <body class="body">
     <form class="upload-container" action="/upload" method="post" enctype="multipart/form-data">
-      <div class="">
-        <label>Upload an image:</label>
         <input type="file" name="uploaded-pic">
-      </div>
-      <div class="">
         <input type="submit" name="submit-pic" value="upload">
-      </div>
     </form>
 
     <div class="card">
@@ -43,7 +38,7 @@
         <div class="modal-footer">
           <div class="external-link">
               <img class="external-icon" src="images/upper-right-arrow.png" alt="redirect">
-            <h5>froggies.com</h5>
+            <h5>website.com</h5>
           </div>
           <button class="btn-circle"><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
           <button class="btn-circle"><i class="fa-solid fa-ellipsis"></i></button>
@@ -53,7 +48,5 @@
         <img src="/image.png" alt="img">
       </div>
     </div>
-
-    <!-- <script src="pin.js"></script> -->
   </body>
 </html>

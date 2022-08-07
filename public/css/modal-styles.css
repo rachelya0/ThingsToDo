@@ -1,0 +1,196 @@
+/* Modals */
+
+.create-pin {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.1);
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.create-pin-container {
+  width: 800px;
+  height: 600px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 30px 40px;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Left side */
+
+.left-column {
+  width: 50%;
+  height: 100%;
+  padding: 0px 10px;
+}
+
+.left-column .left-col-header {
+  width: 100%;
+  height: 10%;
+}
+
+.btn-circle {
+  border-radius: 100%;
+  border: 1px rgba(239,239,239,0);
+  background: rgba(239,239,239,0);
+  padding: 10px 12px;
+
+  cursor: pointer;
+}
+
+.btn-circle:hover {
+  border: 1px rgba(239,239,239,0.8);
+  background: rgba(239,239,239,0.8);
+}
+
+.ellipsis {
+  color: #767676;
+}
+
+.left-column .left-col-upload {
+  width: 92%;
+  height: 78%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-column .left-col-upload .image-upload-label {
+  width: 100%;
+  height: 95.5%;
+  cursor: pointer;
+}
+
+.left-column .left-col-upload .image-upload-label input {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+}
+
+.left-column .left-col-upload .image-upload-label .image-upload-container {
+  width: 90%;
+  height: 100%;
+  border-radius: 9px;
+  background-color: #EFEFEF;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(2.5%, -2%);
+  padding: 10px;
+}
+
+.left-column .left-col-upload .image-upload-label .image-upload-container .dots {
+  width: 98%;
+  height: 98%;
+  border-radius: 9px;
+  border: 2px dashed #DADADA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.upload-icon {
+  color: #767676;
+  padding: 25px;
+}
+
+.drag {
+  font-family: "Helvetica Light", "Arial", sans-serif;
+  width: 60%;
+  font-size: 16px;
+}
+
+.rec {
+  font-family: "Helvetica Light", "Arial", sans-serif;
+  color: #767676;
+  width: 75%;
+  font-size: 14px;
+  position: absolute;
+  bottom: 7%;
+}
+
+.left-column .left-col-footer {
+  width: 92%;
+  height: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-column .left-col-footer .save-from-site {
+  width: 95%;
+  height: 70%;
+  background-color: #EFEFEF;
+  border: 0px #EFEFEF;
+  border-radius: 30px;
+  font-weight: 550;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* hidden image */
+
+.hidden-pin {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  text-align: center;
+  overflow: hidden;
+  display: none;
+  opacity: 0;
+}
+
+.uploaded-pin {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uploaded-pin img {
+  max-height: 100%;
+}
+
+/* Right side */
+
+.right-column {
+  width: 50%;
+  height: 100%;
+  background-color: brown;
+}
+
+.save-pin {
+  width: 100%;
+  height: 10%;
+  background-color: magenta;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pin-description {
+  width: 100%;
+  height: 90%;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

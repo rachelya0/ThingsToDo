@@ -25,6 +25,8 @@ app.use(bodyParser.urlencoded({
 
 app.use(express.static(__dirname + "/public"));
 
+// pin
+
 app.post("/upload", upload.single("uploaded-pic"), function(req, res) {
   const oldPath = req.file.path;
   const newPath = path.join(__dirname, "./uploads/image.png");
@@ -39,12 +41,18 @@ app.post("/upload", upload.single("uploaded-pic"), function(req, res) {
 });
 
 app.get("/", function(req, res) {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + "/pin.html");
 })
 
 app.get("/image.png", function(req, res) {
   res.sendFile(path.join(__dirname, "./uploads/image.png"));
 });
+
+// modal
+
+app.get("/modal", function(req, res) {
+  res.sendFile(__dirname + "/modal.html");
+})
 
 app.listen(process.env.PORT || 3000, function() {
   console.log("Server started on port 3000");
