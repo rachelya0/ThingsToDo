@@ -1,4 +1,4 @@
-import 'emoji-picker-element';
+// import 'emoji-picker-element';
 
 let pin_image_blob = null;
 
@@ -48,6 +48,6 @@ document.querySelector('.save').addEventListener('click', () => {
     console.log(users_data);
 });
 
-// emoji picker not working
-document.querySelector('emoji-picker')
-  .addEventListener('emoji-click', event => console.log(event.detail));
+// // emoji picker not working
+// document.querySelector('emoji-picker')
+//   .addEventListener('emoji-click', event => console.log(event.detail));
