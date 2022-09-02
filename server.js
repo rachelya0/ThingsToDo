@@ -36,7 +36,7 @@ app.post("/upload", upload.single("uploaded-pic"), function(req, res) {
       return handleError(error, res);
     }
   });
-  res.redirect("/");
+  res.redirect("/pin");
   //res.sendFile(`${__dirname}/uploads/${req.file.filename}`)
 });
 
