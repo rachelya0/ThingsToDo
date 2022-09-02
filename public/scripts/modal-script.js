@@ -2,6 +2,7 @@
 
 let pin_image_blob = null;
 
+// checking image type, adding image child
 document.querySelector('#image-upload').addEventListener('change', event => {
     if (event.target.files && event.target.files[0]) {
         if (/image\/*/.test(event.target.files[0].type)) {
@@ -34,6 +35,7 @@ document.querySelector('#image-upload').addEventListener('change', event => {
     document.querySelector('#image-upload').value = '';
 });
 
+// tracking user input for each new pin
 document.querySelector('.save').addEventListener('click', () => {
     const users_data = {
         author: 'Rachel',

@@ -40,7 +40,7 @@ app.post("/upload", upload.single("uploaded-pic"), function(req, res) {
   //res.sendFile(`${__dirname}/uploads/${req.file.filename}`)
 });
 
-app.get("/", function(req, res) {
+app.get("/pin", function(req, res) {
   res.sendFile(__dirname + "/pin.html");
 })
 
@@ -53,6 +53,13 @@ app.get("/image.png", function(req, res) {
 app.get("/modal", function(req, res) {
   res.sendFile(__dirname + "/modal.html");
 })
+
+// board
+
+app.get("/", function(req, res) {
+  res.sendFile(__dirname + "/modal-to-pin.html");
+})
+
 
 app.listen(process.env.PORT || 3000, function() {
   console.log("Server started on port 3000");

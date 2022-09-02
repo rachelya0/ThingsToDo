@@ -1,0 +1,50 @@
+/* Nav bar */
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10%;
+}
+
+.btn-circle-plus {
+  border-radius: 100%;
+  border: 1px rgba(239,239,239,0);
+  background: rgba(239,239,239,0);
+  padding: 10px 12px;
+  position: relative;
+  left: 90%;
+
+  cursor: pointer;
+}
+
+.btn-circle-plus:hover {
+  border: 1px #EFEFEF;
+  background: #EFEFEF;
+}
+
+.nav .plus {
+  color: black;
+}
+
+/* Modal */
+
+.create-pin-modal {
+  opacity: 0;
+  pointer-events: none;
+  transition-duration: 0.5s;
+}
+
+/* Pin */
+
+.board-name {
+  color: white;
+  font-family: "Helvetica Light", "Arial", sans-serif;
+  font-weight: 600;
+}
+
+.destination-site {
+  font-family: "Helvetica Light", "Arial", sans-serif;
+  font-weight: 550;
+  font-size: 15px;
+}

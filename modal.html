@@ -30,7 +30,7 @@
       <div class="left-column">
 
         <div class="left-col-header">
-          <button class="btn-circle"><i class="fa-solid fa-ellipsis fa-xl ellipsis"></i></button>
+          <button class="btn-circle-modal"><i class="fa-solid fa-ellipsis fa-xl ellipsis"></i></button>
         </div>
 
         <div class="left-col-upload">
@@ -47,7 +47,6 @@
 
           <div class="hidden-pin">
             <div class="uploaded-pin">
-              <!-- <img src="" alt="pin-image"> -->
             </div>
           </div>
         </div>
@@ -61,7 +60,10 @@
         <div class="save-pin">
           <div class="choose-board">
             <select class="board-selection" name="boards" id="boards">
-              <option value="friends" selected>friends</option>
+              <option value="" disabled selected>
+                 with who?
+              </option>
+              <option value="friends">friends</option>
               <option value="family">family</option>
               <option value="s/o">s/o</option>
               <option value="myself">myself</option>

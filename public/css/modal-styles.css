@@ -38,7 +38,7 @@
   height: 10%;
 }
 
-.btn-circle {
+.btn-circle-modal {
   border-radius: 100%;
   border: 1px rgba(239,239,239,0);
   background: rgba(239,239,239,0);
@@ -47,7 +47,7 @@
   cursor: pointer;
 }
 
-.btn-circle:hover {
+.btn-circle-modal:hover {
   border: 1px rgba(239,239,239,0.8);
   background: rgba(239,239,239,0.8);
 }
@@ -169,6 +169,7 @@
 
 .pin-max-width {
   max-width: 100%;
+  border-radius: 8px;
 }
 
 .pin-max-height {
@@ -204,6 +205,10 @@
   background-color: #EFEFEF;
   font-size: 15px;
   cursor: pointer;
+}
+
+.disabled-text {
+  color: #EFEFEF;
 }
 
 .right-column .save-pin .choose-board .save {
