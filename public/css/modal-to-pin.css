@@ -7,6 +7,16 @@
   height: 10%;
 }
 
+.activities {
+  font-family: "Helvetica Light", "Arial", sans-serif;
+  text-align: center;
+}
+
+.button-descr {
+  position: relative;
+  left: 87.5%;
+}
+
 .btn-circle-plus {
   border-radius: 100%;
   border: 1px rgba(239,239,239,0);
@@ -14,7 +24,7 @@
   padding: 10px 12px;
   position: relative;
   left: 90%;
-  margin-top: 20px;
+  margin-bottom: 20px;
 
   cursor: pointer;
 }
