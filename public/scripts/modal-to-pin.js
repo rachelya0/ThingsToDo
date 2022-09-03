@@ -62,6 +62,12 @@ document.querySelector('.save').addEventListener('click', () => {
     away_from_modal();
 });
 
+// when title/description button clicked, title/description displayed
+// NOT WORKING
+function display_info() {
+  document.querySelector('.txt').opacity = 1;
+}
+
 function create_pin(pin_info) {
   const new_pin = document.createElement('DIV');
   const new_image = new Image();
@@ -86,8 +92,10 @@ function create_pin(pin_info) {
           <img class="external-icon" src="images/upper-right-arrow.png" alt="redirect">
           <p class="destination-site">${pin_info.destination}</p>
         </div>
-        <button class="btn-circle"><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
-        <button class="btn-circle"><i class="fa-solid fa-ellipsis"></i></button>
+        <p class="txt">${pin_info.title}</p>
+        <button class="btn-circle" onclick='display_info()'><i class="fa-solid fa-lightbulb"></i></button>
+        <p class="txt"></p>
+        <button class="btn-circle" onclick='display_info(${pin_info.description})'><i class="fa-solid fa-ellipsis"></i></button>
       </div>
     </div>
     <div class="uploaded-image">
